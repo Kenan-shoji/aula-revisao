@@ -2,48 +2,75 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <title>Agência Criativa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Meu Primeiro Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        img {
-            max-width: 300px;
-            border-radius: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #0077cc;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #005fa3;
-        }
-    </style>
 </head>
 <body>
 
-    <h1>Bem-vindo ao Meu Site!</h1>
-    <p>Este é um exemplo simples de uma página HTML com texto, imagem e botão.</p>
+    <header>
+        <div class="container">
+            <h1>Agência Criativa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <img src="https://via.placeholder.com/300" alt="Imagem de exemplo">
+    <section class="hero">
+        <div class="container">
+            <h2>Soluções digitais para o seu negócio</h2>
+            <p>Design moderno, sites responsivos e marketing digital.</p>
+            <a href="#contato" class="btn">Fale Conosco</a>
+        </div>
+    </section>
 
-    <br><br>
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma agência especializada em desenvolvimento web e estratégias digitais. Nosso objetivo é ajudar sua empresa a se destacar no mundo online.</p>
+        </div>
+    </section>
 
-    <a href="https://www.google.com" target="_blank">Visite o Google</a>
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Web Design</h3>
+                    <p>Sites modernos, responsivos e com ótima performance.</p>
+                </div>
+                <div class="card">
+                    <h3>Marketing Digital</h3>
+                    <p>Campanhas focadas em resultados para o seu público.</p>
+                </div>
+                <div class="card">
+                    <h3>Identidade Visual</h3>
+                    <p>Criação de logotipos, cores e estilos para sua marca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <br><br>
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
 
-    <button onclick="alert('Você clicou no botão!')">Clique aqui</button>
+    <footer>
+        <p>&copy; 2025 Agência Criativa. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>

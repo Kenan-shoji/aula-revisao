@@ -5,52 +5,112 @@
     box-sizing: border-box;
 }
 
-/* Estilo geral do corpo */
+/* Estilos gerais */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
     color: #333;
-    line-height: 1.6;
-    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-/* Cabeçalho */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
 header {
-    background-color: #0077cc;
+    background-color: #1a1a1a;
+    padding: 20px 0;
     color: white;
-    padding: 20px;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
     text-align: center;
 }
 
-/* Conteúdo principal */
-main {
-    max-width: 800px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Títulos */
-h1, h2 {
+.hero h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-/* Parágrafos */
-p {
-    margin-bottom: 15px;
+.hero .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-/* Imagens */
-img {
-    max-width: 100%;
-    border-radius: 8px;
+/* Seções */
+section {
+    padding: 60px 0;
 }
 
-/* Botões */
+.sobre, .servicos, .contato {
+    background-color: white;
+}
+
+.servicos .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #f1f1f1;
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 button {
-    padding: 10px 20px;
+    padding: 15px;
     background-color: #0077cc;
     color: white;
     border: none;
@@ -62,12 +122,11 @@ button:hover {
     background-color: #005fa3;
 }
 
-/* Links */
-a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+/* Rodapé */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
