@@ -8,7 +8,7 @@
 /* Estilos gerais */
 body {
     font-family: 'Segoe UI', sans-serif;
-    color: #333;
+    color: #030303;
     background-color: #f9f9f9;
 }
 
@@ -20,9 +20,9 @@ body {
 
 /* Header */
 header {
-    background-color: #1a1a1a;
+    background-color: #f38e09;
     padding: 20px 0;
-    color: white;
+    color: rgb(109, 6, 245);
 }
 
 header h1 {
@@ -51,7 +51,7 @@ nav ul li a {
 .hero {
     background: url('https://via.placeholder.com/1200x400') no-repeat center center;
     background-size: cover;
-    color: white;
+    color: rgb(241, 26, 26);
     padding: 100px 0;
     text-align: center;
 }
